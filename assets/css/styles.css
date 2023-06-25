@@ -11,6 +11,7 @@
 html{
 	font: normal 16px sans-serif;
 	color: #555;
+	scroll-behavior: smooth;
 }
 
 ul, nav{
@@ -29,13 +30,15 @@ a:hover{
 	opacity: 1;
 }
 
-a.btn{
+.btn{
 	color: #fff;
 	border-radius: 4px;
 	text-transform: uppercase;
 	background-color: #2196F3;
 	font-weight: 800;
 	text-align: center;
+	border: none;
+	outline: none;
 }
 
 hr{
@@ -99,7 +102,7 @@ ul.grid{
 -------------*/
 
 header{
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: 10;
@@ -352,7 +355,7 @@ header nav li:last-child{
 @media (max-width: 1000px){
 
 	.reviews .quote{
-		font-size: 20px;
+		font-size: 15px;
 	}
 
 	.reviews .author{
@@ -393,12 +396,32 @@ header nav li:last-child{
 	padding: 18px 42px;
 }
 
+.contact a.btn{
+	padding: 18px 42px;
+}
+
+.whatsApp{
+	margin: 35px auto;
+	background-color: #25d366;
+}
+
 
 @media (max-width: 800px){
 
 	.contact form input{
 		flex-basis: 100%;
-		margin: 0 0 20px 0;
+		margin: 0;
+	}
+
+	.contact form .btn{
+		margin-top: 30px;
+		font-size: 12px;
+    	padding: 15px 30px;
+	}
+
+	.contact a.btn{
+		font-size: 12px;
+		padding: 15px 30px;
 	}
 
 }
